@@ -1,5 +1,34 @@
-# Vue 3 + TypeScript + Vite
+# parolin.dev
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Parolin.dev is my personal website showcasing my work, built with Vue.js and styled using Tailwind CSS. Explore the live site at [parolin.dev](https://parolin.dev).
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Getting Started
+
+### Prerequisites
+
+- Node.js and NPM
+
+### Installation
+
+- Clone this repository
+
+  ```bash
+  git clone https://github.com/Paroleen/parolin.dev.git
+  cd parolin.dev
+  ```
+
+- Install Node.js packages
+
+  ```bash
+  npm install
+  ```
+
+- Run the project
+
+  ```bash
+  npm run dev
+  ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Paroleen/parolin.dev/blob/main/LICENSE) file for details.
