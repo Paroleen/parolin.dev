@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  version="1.1"
+  id="svg8"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+>
+  <defs id="defs8" />
+  <sodipodi:namedview
+    id="namedview8"
+    pagecolor="#ffffff"
+    bordercolor="#000000"
+    borderopacity="0.25"
+    inkscape:showpageshadow="2"
+    inkscape:pageopacity="0.0"
+    inkscape:pagecheckerboard="0"
+    inkscape:deskcolor="#d1d1d1"
+    inkscape:zoom="2.8284271"
+    inkscape:cx="134.88062"
+    inkscape:cy="140.89103"
+    inkscape:window-width="1920"
+    inkscape:window-height="1080"
+    inkscape:window-x="0"
+    inkscape:window-y="0"
+    inkscape:window-maximized="1"
+    inkscape:current-layer="svg8"
+  />
+  <rect
+    x="10"
+    y="10"
+    width="180"
+    height="180"
+    rx="35"
+    stroke="#404040"
+    stroke-width="2"
+    fill="#161616ff"
+    style="stroke-width: 1; stroke-dasharray: none"
+  />
+  <path
+    d="
+      M100,47.3671
+      L160.7754,152.6329
+      L39.2247,152.6329
+      Z
+      M100,85.2045
+      L128.7308,135.0299
+      L71.2692,135.0299
+      Z
+      "
+    fill="#0a0a0a"
+    fill-rule="evenodd"
+    stroke="#FFFFFF"
+    stroke-width="0.7"
+    stroke-linejoin="miter"
+    stroke-linecap="butt"
+    style="fill-opacity: 1; stroke-dasharray: none"
+  />
+  <line x1="55" y1="10" x2="55" y2="190" stroke="#404040" stroke-width="0.25" />
+  <line
+    x1="145"
+    y1="10"
+    x2="145"
+    y2="190"
+    stroke="#404040"
+    stroke-width="0.25"
+  />
+  <line x1="10" y1="55" x2="190" y2="55" stroke="#72767e" stroke-width="0.25" />
+  <line
+    x1="10"
+    y1="145"
+    x2="190"
+    y2="145"
+    stroke="#72767e"
+    stroke-width="0.25"
+  />
+  <line
+    x1="20.195309"
+    y1="20.195309"
+    x2="179.80901"
+    y2="179.80901"
+    stroke="#72767e"
+    stroke-width="0.25"
+  />
+  <line
+    x1="10"
+    y1="100"
+    x2="190"
+    y2="100"
+    stroke="#72767e"
+    stroke-width="0.25"
+  />
+  <line
+    x1="100"
+    y1="10"
+    x2="100"
+    y2="190"
+    stroke="#72767e"
+    stroke-width="0.25"
+  />
+  <line
+    x1="179.80647"
+    y1="20.193546"
+    x2="20.193544"
+    y2="179.80647"
+    stroke="#72767e"
+    stroke-width="0.25"
+  />
+</svg>
