@@ -1,81 +1,511 @@
 @import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@theme {
+  --animate-navbar: navbar 250ms ease-out;
+  --animate-content: content 250ms ease-out both;
+  --animate-globe-tile-1: globe-tile-1 10s infinite;
+  --animate-globe-tile-2: globe-tile-2 10s infinite;
+  --animate-globe-tile-3: globe-tile-3 10s infinite;
+  --animate-globe-tile-4: globe-tile-4 10s infinite;
+  --animate-globe-tile-5: globe-tile-5 10s infinite;
+  --animate-globe-tile-6: globe-tile-6 10s infinite;
+  --animate-globe-tile-7: globe-tile-7 10s infinite;
+  --animate-globe-tile-8: globe-tile-8 10s infinite;
+  --animate-globe-tile-9: globe-tile-9 10s infinite;
+  --animate-globe-tile-10: globe-tile-10 10s infinite;
+  --animate-globe-tile-11: globe-tile-11 10s infinite;
+  --animate-globe-tile-12: globe-tile-12 10s infinite;
+  --animate-globe-tile-13: globe-tile-13 10s infinite;
+  --animate-globe-tile-14: globe-tile-14 10s infinite;
+  --animate-circle-app: circle-app 10s infinite;
+  --animate-square-app: square-app 10s infinite;
+  --animate-triangle-app: triangle-app 10s infinite;
+  --animate-plus: plus 6s infinite;
+  --animate-chevron-up: chevron-up 5s infinite;
+  --animate-abc-1: abc-1 8s linear infinite;
+  --animate-abc-2: abc-2 8s linear infinite;
+  --animate-magnifier: magnifier 7s infinite;
+  --animate-map: map 10s infinite;
+  --animate-calendar-sync: calendar-sync 6s infinite;
+  --animate-download-arrow: download-arrow 4s infinite;
+  --animate-tag: tag 5s infinite alternate;
+  --animate-phone-navigation-1: phone-navigation-1 10s infinite;
+  --animate-phone-navigation-2: phone-navigation-2 10s infinite;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  @keyframes navbar {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
-  a:hover {
-    color: #747bff;
+
+  @keyframes content {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  button {
-    background-color: #f9f9f9;
+
+  @keyframes globe-tile-1 {
+    0%,
+    6% {
+      opacity: 0%;
+    }
+    12%,
+    18% {
+      opacity: 100%;
+    }
+    24%,
+    100% {
+      opacity: 0%;
+    }
   }
+
+  @keyframes globe-tile-2 {
+    0%,
+    12% {
+      opacity: 0%;
+    }
+    18%,
+    24% {
+      opacity: 100%;
+    }
+    30%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-3 {
+    0%,
+    18% {
+      opacity: 0%;
+    }
+    24%,
+    30% {
+      opacity: 100%;
+    }
+    36%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-4 {
+    0%,
+    24% {
+      opacity: 0%;
+    }
+    30%,
+    36% {
+      opacity: 100%;
+    }
+    42%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-5 {
+    0%,
+    30% {
+      opacity: 0%;
+    }
+    36%,
+    42% {
+      opacity: 100%;
+    }
+    48%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-6 {
+    0%,
+    36% {
+      opacity: 0%;
+    }
+    42%,
+    48% {
+      opacity: 100%;
+    }
+    54%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-7 {
+    0%,
+    42% {
+      opacity: 0%;
+    }
+    48%,
+    54% {
+      opacity: 100%;
+    }
+    60%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-8 {
+    0%,
+    48% {
+      opacity: 0%;
+    }
+    54%,
+    60% {
+      opacity: 100%;
+    }
+    66%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-9 {
+    0%,
+    54% {
+      opacity: 0%;
+    }
+    60%,
+    66% {
+      opacity: 100%;
+    }
+    72%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-10 {
+    0%,
+    60% {
+      opacity: 0%;
+    }
+    66%,
+    72% {
+      opacity: 100%;
+    }
+    78%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-11 {
+    0%,
+    66% {
+      opacity: 0%;
+    }
+    72%,
+    78% {
+      opacity: 100%;
+    }
+    84%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-12 {
+    0%,
+    72% {
+      opacity: 0%;
+    }
+    78%,
+    84% {
+      opacity: 100%;
+    }
+    90%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-13 {
+    0%,
+    78% {
+      opacity: 0%;
+    }
+    84%,
+    90% {
+      opacity: 100%;
+    }
+    96%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes globe-tile-14 {
+    0%,
+    42% {
+      opacity: 0%;
+    }
+    45%,
+    48% {
+      opacity: 100%;
+    }
+    51%,
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes circle-app {
+    0% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(130px)
+        translateX(-5%) translateY(5%);
+      filter: contrast(1.06);
+    }
+    2%,
+    28% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(130px)
+        translateX(-5%) translateY(-25%);
+      filter: contrast(1);
+    }
+    30%,
+    100% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(130px)
+        translateX(-5%) translateY(5%);
+      filter: contrast(1.06);
+    }
+  }
+
+  @keyframes square-app {
+    0%,
+    30% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(0)
+        translateX(0%) translateY(10%);
+      filter: contrast(1.06);
+    }
+    32%,
+    58% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(0)
+        translateX(0%) translateY(-25%);
+      filter: contrast(1);
+    }
+    60%,
+    100% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(0)
+        translateX(0%) translateY(10%);
+      filter: contrast(1.06);
+    }
+  }
+
+  @keyframes triangle-app {
+    0%,
+    60% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(-130px)
+        translateX(5%) translateY(5%);
+      filter: contrast(1.06);
+    }
+    62%,
+    88% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(-130px)
+        translateX(5%) translateY(-25%);
+      filter: contrast(1);
+    }
+    90%,
+    100% {
+      transform: skewY(-4deg) rotateX(-14deg) rotateY(20deg) translateZ(-130px)
+        translateX(5%) translateY(5%);
+      filter: contrast(1.06);
+    }
+  }
+
+  @keyframes plus {
+    0%,
+    90% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes chevron-up {
+    0% {
+      transform: translateY(0%);
+    }
+    30% {
+      transform: translateY(-15%);
+    }
+    60%,
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes abc-1 {
+    0% {
+      opacity: 1;
+      filter: blur(0);
+    }
+    20%,
+    50% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    70%,
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  @keyframes abc-2 {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    20%,
+    50% {
+      opacity: 1;
+      filter: blur(0);
+    }
+    70%,
+    100% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+  }
+
+  @keyframes magnifier {
+    0% {
+      top: 10%;
+      left: 10%;
+    }
+    20% {
+      top: 15%;
+      left: 60%;
+    }
+    40% {
+      top: 50%;
+      left: 35%;
+    }
+    60% {
+      top: 35%;
+      left: 5%;
+    }
+    80% {
+      top: 30%;
+      left: 25%;
+    }
+    100% {
+      top: 10%;
+      left: 10%;
+    }
+  }
+
+  @keyframes map {
+    0% {
+      transform: translate(25%, 0%) scale(1.5);
+    }
+    8%,
+    18% {
+      transform: translate(-15%, 0%) scale(2.5);
+    }
+    26%,
+    36% {
+      transform: translate(35%, 0%) scale(2.5);
+    }
+    44%,
+    54% {
+      transform: translate(12%, 65%) scale(2.5);
+    }
+    62%,
+    100% {
+      transform: translate(25%, 0%) scale(1.5);
+    }
+  }
+
+  @keyframes calendar-sync {
+    0%,
+    90% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes download-arrow {
+    0% {
+      transform: translateY(0%);
+    }
+    30% {
+      transform: translateY(-10%);
+    }
+    60%,
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes tag {
+    0%,
+    40% {
+      opacity: 0;
+      transform: translate(0%, 0%) rotate(0deg);
+    }
+    60%,
+    100% {
+      opacity: 1;
+      transform: translate(15%, -20%) rotate(-25deg);
+    }
+  }
+
+  @keyframes phone-navigation-1 {
+    0% {
+      opacity: 75%;
+      transform: translate(0%, 0%);
+    }
+    8%,
+    18% {
+      opacity: 75%;
+      transform: translate(0%, -45%);
+    }
+    26%,
+    36% {
+      opacity: 75%;
+      transform: translate(0%, 0%);
+    }
+    40%,
+    96% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 75%;
+    }
+  }
+
+  @keyframes phone-navigation-2 {
+    0%,
+    36% {
+      opacity: 0%;
+    }
+    40%,
+    96% {
+      opacity: 75%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+}
+
+::selection {
+  background-color: #c1c1c1;
+  color: #000000;
 }
